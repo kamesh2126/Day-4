@@ -1,0 +1,41 @@
+Read about the difference between window, screen and document in javascript
+
+Window: 
+Each browser tab has its own top-level window object.    
+Each <iframe> (and deprecated <frame>) element has its own window object too,
+nested within a parent window. Each of these windows gets  its own separate global object.
+window.window always refers to window,but window.parent and window.top might refer to enclosing windows,
+giving access to other execution contexts.n addition to document and screen described below, 
+window properties include
+
+setTimeout() and setInterval() binding event handlers to a timer
+location giving the current URL
+history with methods back() and forward() giving the tab's mutable history
+navigator describing the browser software
+
+Document:
+
+The Document interface represents any web page loaded in the browser and serves
+as an entry point into the web page’s content, which is the DOM tree.
+When an HTML document is loaded into a web browser , it becomes a document object.
+It is the root node of the HTML document. The document actually gets loaded inside the
+window object and has properties available to it like title, URL, cookie, etc.
+HTML documents, served with the “text/html” content type, also implement the HTML 
+Document interface, whereas XML and SVG documents implement the XMLDocument interface.
+
+Screen:
+
+Screen is a small information object about physical screen dimensions .
+ It can be used to display screen width, height, colorDepth, pixelDepth etc. 
+ It is not mandatory to write window prefix with screen object. It can be written without
+  window prefix.
+
+Properties:
+
+screen.width
+screen.height
+screen.availWidth
+screen.availHeight
+screen.colorDepth
+screen.pixelDepth
+
